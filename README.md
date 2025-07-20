@@ -1,6 +1,6 @@
 # splunk-mcp-server
 
-A lightweight, extensible **Model Context Protocol (MCP)** server for **Splunk Enterprise**, designed to integrate with **Claude Desktop** or any MCP-compatible agent. Enables secure, async, chat-based interaction with your Splunk data using **FastAPI**.
+A lightweight, extensible **Model Context Protocol (MCP)** server for **Splunk Enterprise**, designed to integrate with **Claude Desktop** or any MCP-compatible agent. Enables secure, async, chat-based interaction with your Splunk data using **FastMCP**.
 
 ---
 

@@ -21,7 +21,7 @@ A lightweight, extensible **Model Context Protocol (MCP)** server for **Splunk E
 - ⚡ **Async HTTP client** via [`httpx`](https://www.python-httpx.org/)
 - 🧩 **Simple plugin-style architecture** for adding tools
 - 💻 Designed for **local development** or integration with Claude Desktop
-- 🚀 Built with **FastAPI** and **Python 3.13**
+- 🚀 Built with **FastMCP** and **Python 3.13**
 
 
 ## 🛠 Installation Guide

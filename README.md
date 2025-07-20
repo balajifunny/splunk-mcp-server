@@ -35,8 +35,11 @@ Download and install from [Anthropic Claude Desktop](https://www.anthropic.com/i
 
 ### 3. Clone the repository
 
-- git clone https://github.com/balajifunny/splunk-mcp-server.git
-- cd splunk-mcp-server
+```bash
+git clone https://github.com/balajifunny/splunk-mcp-server.git
+cd splunk-mcp-server
+
+```
 
 ### 4. Set your Splunk Configurations
 
@@ -54,7 +57,7 @@ SPLUNK_SCHEME=https
 
 ~/Library/Application Support/Claude/claude_desktop_config.json
 
-## 
+```json
 
 {
   "mcpServers": {
@@ -71,3 +74,5 @@ SPLUNK_SCHEME=https
     }
   }
 }
+
+```

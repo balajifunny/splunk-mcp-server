@@ -22,3 +22,52 @@ A lightweight, extensible **Model Context Protocol (MCP)** server for **Splunk E
 - 🧩 **Simple plugin-style architecture** for adding tools
 - 💻 Designed for **local development** or integration with Claude Desktop
 - 🚀 Built with **FastAPI** and **Python 3.13**
+
+
+## 🛠 Installation Guide
+
+### 1. Install Claude Desktop
+Download and install from [Anthropic Claude Desktop](https://www.anthropic.com/index/claude-desktop) (macOS only for now).
+
+### 2. Install `uv` (Python package manager by Astral)
+```bash
+curl -sSf https://astral.sh/uv/install.sh | sh
+
+### 3. Clone the repository
+
+git clone https://github.com/balajifunny/splunk-mcp-server.git
+cd splunk-mcp-server
+
+### 4. Set your Splunk Configurations
+
+Update the Splunk configuration section in main.py 
+
+## 
+
+SPLUNK_HOST=127.0.0.1
+SPLUNK_PORT=8089
+SPLUNK_USERNAME=<your_splunk_username>
+SPLUNK_PASSWORD=<your_splunk_password>
+SPLUNK_SCHEME=https
+
+### 5. Update Claude Desktop configuration
+
+~/Library/Application Support/Claude/claude_desktop_config.json
+
+## 
+
+{
+  "mcpServers": {
+    "splunk-mcp-demo": {
+      "command": "/opt/uv",
+      "args": [
+        "run",
+        "--with",
+        "mcp[cli]",
+        "mcp",
+        "run",
+        "/Users/<your_user_name>/splunk-mcp-server/main.py"
+      ]
+    }
+  }
+}

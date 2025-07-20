@@ -30,8 +30,8 @@ A lightweight, extensible **Model Context Protocol (MCP)** server for **Splunk E
 Download and install from [Anthropic Claude Desktop](https://www.anthropic.com/index/claude-desktop) (macOS only for now).
 
 ### 2. Install `uv` (Python package manager by Astral)
-```bash
-curl -sSf https://astral.sh/uv/install.sh | sh
+
+ sudo curl -LsSf https://astral.sh/uv/install.sh | env UV_INSTALL_DIR="/opt" sh
 
 ### 3. Clone the repository
 

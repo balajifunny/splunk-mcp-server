@@ -35,20 +35,20 @@ Download and install from [Anthropic Claude Desktop](https://www.anthropic.com/i
 
 ### 3. Clone the repository
 
-git clone https://github.com/balajifunny/splunk-mcp-server.git
-cd splunk-mcp-server
+- git clone https://github.com/balajifunny/splunk-mcp-server.git
+- cd splunk-mcp-server
 
 ### 4. Set your Splunk Configurations
 
 Update the Splunk configuration section in main.py 
 
-## 
-
+```python
 SPLUNK_HOST=127.0.0.1
 SPLUNK_PORT=8089
 SPLUNK_USERNAME=<your_splunk_username>
 SPLUNK_PASSWORD=<your_splunk_password>
 SPLUNK_SCHEME=https
+```
 
 ### 5. Update Claude Desktop configuration
 
